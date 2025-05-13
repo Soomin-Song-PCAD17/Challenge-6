@@ -38,18 +38,20 @@ for (int i = 0; i < 7; i++)
 Demo(matrix7);
 
 
-//int[,] matrix3 = {
-//   { 1, 2, 3 },
-//   { 4, 5, 6 },
-//   { 7, 8, 9 }
-//};
+int[,] matrix3 = {
+   { 1, 2, 3 },
+   { 4, 5, 6 },
+   { 7, 8, 9 }
+};
 
-//Demo(matrix3);
+Demo(matrix3);
 
 void Demo(int[,] matrix)
 {
+    Console.WriteLine("Input Matrix:");
     DisplayMatrix(matrix);
     Console.WriteLine();
+    Console.WriteLine("Output Matrix:");
     DisplayMatrix(RotateMatrix(matrix));
 }
 
